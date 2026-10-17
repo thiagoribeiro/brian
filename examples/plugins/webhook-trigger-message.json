@@ -1,0 +1,22 @@
+{
+  "type": "m.ui.message",
+  "content": {
+    "schema": "brian.message",
+    "version": "1.0",
+    "body": [
+      {
+        "type": "plugin",
+        "plugin": "webhook_trigger",
+        "version": "1.0",
+        "schema_version": "1.0",
+        "instance_id": "webhook_123",
+        "view": {
+          "title": "Waiting for callback",
+          "status": "waiting",
+          "callback_id": "cb_123"
+        },
+        "fallback_markdown": "**Waiting for callback:** cb_123"
+      }
+    ]
+  }
+}

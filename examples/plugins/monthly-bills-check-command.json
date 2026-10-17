@@ -1,0 +1,11 @@
+{
+  "type": "m.plugin.command",
+  "content": {
+    "plugin": "checklist",
+    "instance_id": "monthly_bills_2026_05",
+    "command": "check_item",
+    "payload": {
+      "item_id": "electricity"
+    }
+  }
+}

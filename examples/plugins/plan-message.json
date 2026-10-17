@@ -1,0 +1,28 @@
+{
+  "type": "m.ui.message",
+  "content": {
+    "schema": "brian.message",
+    "version": "1.0",
+    "body": [
+      {
+        "type": "plugin",
+        "plugin": "plan",
+        "version": "1.0",
+        "schema_version": "1.0",
+        "instance_id": "plan_123",
+        "view": {
+          "title": "Proposed plan",
+          "status": "proposed",
+          "steps": [
+            {
+              "id": "s1",
+              "title": "Search existing capabilities",
+              "status": "pending"
+            }
+          ]
+        },
+        "fallback_markdown": "**Proposed plan:** Search existing capabilities."
+      }
+    ]
+  }
+}

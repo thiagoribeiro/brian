@@ -1,0 +1,32 @@
+{
+  "type": "m.ui.message",
+  "content": {
+    "schema": "brian.message",
+    "version": "1.0",
+    "body": [
+      {
+        "type": "plugin",
+        "plugin": "chart",
+        "version": "1.0",
+        "schema_version": "1.0",
+        "instance_id": "chart_123",
+        "view": {
+          "title": "Latency",
+          "chart_type": "line",
+          "series": [
+            {
+              "name": "p90",
+              "points": [
+                {
+                  "x": "12:00",
+                  "y": 120
+                }
+              ]
+            }
+          ]
+        },
+        "fallback_markdown": "**Chart:** Latency p90 = 120ms"
+      }
+    ]
+  }
+}

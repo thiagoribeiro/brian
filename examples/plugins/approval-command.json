@@ -1,0 +1,9 @@
+{
+  "type": "m.plugin.command",
+  "content": {
+    "plugin": "approval",
+    "instance_id": "approval_123",
+    "command": "approve",
+    "payload": {}
+  }
+}

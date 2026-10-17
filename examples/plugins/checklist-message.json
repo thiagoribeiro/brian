@@ -1,0 +1,28 @@
+{
+  "type": "m.ui.message",
+  "content": {
+    "schema": "brian.message",
+    "version": "1.0",
+    "body": [
+      {
+        "type": "plugin",
+        "plugin": "checklist",
+        "version": "1.0",
+        "schema_version": "1.0",
+        "instance_id": "checklist_123",
+        "view": {
+          "title": "Launch checklist",
+          "status": "open",
+          "items": [
+            {
+              "id": "i1",
+              "label": "Run migrations",
+              "checked": false
+            }
+          ]
+        },
+        "fallback_markdown": "**Checklist:** Launch checklist\n- [ ] Run migrations"
+      }
+    ]
+  }
+}

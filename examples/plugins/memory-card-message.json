@@ -1,0 +1,24 @@
+{
+  "type": "m.ui.message",
+  "content": {
+    "schema": "brian.message",
+    "version": "1.0",
+    "body": [
+      {
+        "type": "plugin",
+        "plugin": "memory_card",
+        "version": "1.0",
+        "schema_version": "1.0",
+        "instance_id": "memory_123",
+        "view": {
+          "title": "Proposed memory",
+          "status": "proposed",
+          "memory": {
+            "text": "User prefers clean, modern style."
+          }
+        },
+        "fallback_markdown": "**Proposed memory:** User prefers clean, modern style."
+      }
+    ]
+  }
+}

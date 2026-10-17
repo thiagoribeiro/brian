@@ -1,0 +1,13 @@
+{
+  "type": "m.ui.message",
+  "content": {
+    "schema": "brian.message",
+    "version": "1.0",
+    "body": [
+      {
+        "type": "markdown",
+        "text": "Hello! I can help you with this."
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "type": "m.ui.message",
+  "content": {
+    "schema": "brian.message",
+    "version": "1.0",
+    "body": [
+      {
+        "type": "plugin",
+        "plugin": "poll",
+        "version": "1.0",
+        "schema_version": "1.0",
+        "instance_id": "poll_123",
+        "view": {
+          "question": "Which option should we choose?",
+          "status": "open",
+          "allow_multiple": false,
+          "options": [
+            {
+              "id": "a",
+              "label": "Option A",
+              "votes": 0
+            },
+            {
+              "id": "b",
+              "label": "Option B",
+              "votes": 0
+            }
+          ]
+        },
+        "fallback_markdown": "**Poll:** Which option should we choose?\n- Option A\n- Option B"
+      }
+    ]
+  }
+}

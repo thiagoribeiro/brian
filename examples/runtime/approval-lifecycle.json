@@ -1,0 +1,136 @@
+[
+  {
+    "event_id": "example-1",
+    "room_seq": 1,
+    "room_id": "room-1",
+    "sender_id": "publisher-1",
+    "type": "m.plugin.instance.created",
+    "content": {
+      "plugin": "approval",
+      "instance_id": "approval-1",
+      "state": {
+        "title": "Cancelar automa\u00e7\u00e3o",
+        "description": "Cancelamento cooperativo",
+        "status": "pending",
+        "revision": 1,
+        "owner_id": "user-1",
+        "approvers": [
+          "user-1"
+        ],
+        "expires_at": "2026-01-01T12:05:00Z"
+      },
+      "view": {
+        "title": "Cancelar automa\u00e7\u00e3o",
+        "description": "Cancelamento cooperativo",
+        "status": "pending",
+        "revision": 1,
+        "owner_id": "user-1",
+        "approvers": [
+          "user-1"
+        ],
+        "expires_at": "2026-01-01T12:05:00Z"
+      }
+    }
+  },
+  {
+    "event_id": "example-2",
+    "room_seq": 2,
+    "room_id": "room-1",
+    "sender_id": "agent-1",
+    "type": "m.ui.message",
+    "content": {
+      "schema": "brian.message",
+      "version": "1.0",
+      "body": [
+        {
+          "type": "plugin",
+          "plugin": "approval",
+          "version": "1.0",
+          "schema_version": "1.0",
+          "instance_id": "approval-1",
+          "view": {
+            "title": "Cancelar automa\u00e7\u00e3o",
+            "description": "Cancelamento cooperativo",
+            "status": "pending",
+            "revision": 1,
+            "owner_id": "user-1",
+            "approvers": [
+              "user-1"
+            ],
+            "expires_at": "2026-01-01T12:05:00Z"
+          },
+          "fallback_markdown": "Cancelar automa\u00e7\u00e3o \u2014 aguardando aprova\u00e7\u00e3o",
+          "surface": {
+            "default": "pinned",
+            "auto_pin": true,
+            "dismissible": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "event_id": "example-3",
+    "room_seq": 3,
+    "room_id": "room-1",
+    "sender_id": "user-1",
+    "type": "m.plugin.command",
+    "content": {
+      "plugin": "approval",
+      "instance_id": "approval-1",
+      "command": "approve",
+      "payload": {}
+    }
+  },
+  {
+    "event_id": "example-4",
+    "room_seq": 4,
+    "room_id": "room-1",
+    "sender_id": "publisher-1",
+    "type": "m.plugin.state.updated",
+    "content": {
+      "plugin": "approval",
+      "instance_id": "approval-1",
+      "state": {
+        "title": "Cancelar automa\u00e7\u00e3o",
+        "description": "Cancelamento cooperativo",
+        "status": "approved",
+        "revision": 2,
+        "owner_id": "user-1",
+        "approvers": [
+          "user-1"
+        ],
+        "expires_at": "2026-01-01T12:05:00Z",
+        "resolved_by": "user-1",
+        "resolved_at": "2026-01-01T12:01:00Z"
+      },
+      "view": {
+        "title": "Cancelar automa\u00e7\u00e3o",
+        "description": "Cancelamento cooperativo",
+        "status": "approved",
+        "revision": 2,
+        "owner_id": "user-1",
+        "approvers": [
+          "user-1"
+        ],
+        "expires_at": "2026-01-01T12:05:00Z",
+        "resolved_by": "user-1",
+        "resolved_at": "2026-01-01T12:01:00Z"
+      },
+      "command_event_id": "example-3"
+    }
+  },
+  {
+    "event_id": "example-5",
+    "room_seq": 5,
+    "room_id": "room-1",
+    "sender_id": "user-1",
+    "type": "m.ui.surface.preference.updated",
+    "content": {
+      "plugin": "approval",
+      "instance_id": "approval-1",
+      "user_pin": false,
+      "dismissed": true
+    }
+  }
+]

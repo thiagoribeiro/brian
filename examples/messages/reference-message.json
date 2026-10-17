@@ -1,0 +1,20 @@
+{
+  "type": "m.ui.message",
+  "content": {
+    "schema": "brian.message",
+    "version": "1.0",
+    "body": [
+      {
+        "type": "markdown",
+        "text": "This alert has been resolved."
+      },
+      {
+        "type": "reference",
+        "title": "Original alert",
+        "event_id": "evt_alert_opened",
+        "room_id": "room_123",
+        "description": "The alert that started this incident."
+      }
+    ]
+  }
+}

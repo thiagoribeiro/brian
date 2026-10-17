@@ -1,0 +1,43 @@
+{
+  "type": "m.ui.message",
+  "content": {
+    "schema": "brian.message",
+    "version": "1.0",
+    "body": [
+      {
+        "type": "markdown",
+        "text": "Workflow execution started."
+      },
+      {
+        "type": "plugin",
+        "plugin": "workflow",
+        "version": "1.0",
+        "schema_version": "1.0",
+        "instance_id": "workflow_123",
+        "view": {
+          "title": "Bitcoin price drop monitor",
+          "status": "running",
+          "execution_id": "exec_123",
+          "steps": [
+            {
+              "id": "get_initial_price",
+              "title": "Get initial BTC price",
+              "status": "completed"
+            },
+            {
+              "id": "sleep",
+              "title": "Wait before next check",
+              "status": "running"
+            },
+            {
+              "id": "check_threshold",
+              "title": "Check percentage change",
+              "status": "pending"
+            }
+          ]
+        },
+        "fallback_markdown": "**Workflow running:** Bitcoin price drop monitor"
+      }
+    ]
+  }
+}

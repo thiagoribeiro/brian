@@ -1,0 +1,16 @@
+{
+  "type": "m.plugin.state.updated",
+  "content": {
+    "plugin": "approval",
+    "instance_id": "approval_123",
+    "state": {
+      "status": "approved",
+      "approved_by": "user_123"
+    },
+    "view": {
+      "title": "Approved",
+      "status": "approved",
+      "approved_by": "user_123"
+    }
+  }
+}

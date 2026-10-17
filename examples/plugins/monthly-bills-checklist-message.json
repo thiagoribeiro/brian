@@ -1,0 +1,41 @@
+{
+  "type": "m.ui.message",
+  "content": {
+    "schema": "brian.message",
+    "version": "1.0",
+    "body": [
+      {
+        "type": "plugin",
+        "plugin": "checklist",
+        "version": "1.0",
+        "schema_version": "1.0",
+        "instance_id": "monthly_bills_2026_05",
+        "surface": {
+          "default": "pinned",
+          "auto_pin": true,
+          "priority": "high",
+          "dismissible": true
+        },
+        "view": {
+          "title": "May 2026 bills",
+          "status": "open",
+          "items": [
+            {
+              "id": "electricity",
+              "label": "Electricity bill",
+              "checked": false,
+              "due_date": "2026-05-10"
+            },
+            {
+              "id": "internet",
+              "label": "Internet bill",
+              "checked": false,
+              "due_date": "2026-05-15"
+            }
+          ]
+        },
+        "fallback_markdown": "**May 2026 bills**\n- [ ] Electricity bill\n- [ ] Internet bill"
+      }
+    ]
+  }
+}

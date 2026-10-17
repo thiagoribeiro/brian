@@ -1,0 +1,29 @@
+{
+  "type": "m.ui.message",
+  "content": {
+    "schema": "brian.message",
+    "version": "1.0",
+    "body": [
+      {
+        "type": "plugin",
+        "plugin": "log_stream",
+        "version": "1.0",
+        "schema_version": "1.0",
+        "instance_id": "logs_123",
+        "view": {
+          "title": "Execution logs",
+          "status": "open",
+          "lines": [
+            {
+              "timestamp": "2026-04-25T12:00:00Z",
+              "level": "info",
+              "message": "Started"
+            }
+          ],
+          "has_more": false
+        },
+        "fallback_markdown": "**Logs:** Started"
+      }
+    ]
+  }
+}

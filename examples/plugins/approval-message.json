@@ -1,0 +1,25 @@
+{
+  "type": "m.ui.message",
+  "content": {
+    "schema": "brian.message",
+    "version": "1.0",
+    "body": [
+      {
+        "type": "markdown",
+        "text": "This action requires approval."
+      },
+      {
+        "type": "plugin",
+        "plugin": "approval",
+        "version": "1.0",
+        "schema_version": "1.0",
+        "instance_id": "approval_123",
+        "view": {
+          "title": "Approve sending this message?",
+          "status": "pending"
+        },
+        "fallback_markdown": "**Approval pending:** Approve sending this message?"
+      }
+    ]
+  }
+}

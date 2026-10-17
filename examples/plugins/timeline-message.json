@@ -1,0 +1,27 @@
+{
+  "type": "m.ui.message",
+  "content": {
+    "schema": "brian.message",
+    "version": "1.0",
+    "body": [
+      {
+        "type": "plugin",
+        "plugin": "timeline",
+        "version": "1.0",
+        "schema_version": "1.0",
+        "instance_id": "timeline_123",
+        "view": {
+          "title": "Incident timeline",
+          "items": [
+            {
+              "id": "e1",
+              "title": "Alert opened",
+              "timestamp": "2026-04-25T12:00:00Z"
+            }
+          ]
+        },
+        "fallback_markdown": "**Timeline:** Alert opened."
+      }
+    ]
+  }
+}

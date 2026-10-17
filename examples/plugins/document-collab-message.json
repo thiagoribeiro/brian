@@ -1,0 +1,24 @@
+{
+  "type": "m.ui.message",
+  "content": {
+    "schema": "brian.message",
+    "version": "1.0",
+    "body": [
+      {
+        "type": "plugin",
+        "plugin": "document_collab",
+        "version": "1.0",
+        "schema_version": "1.0",
+        "instance_id": "doc_123",
+        "view": {
+          "title": "Draft note",
+          "status": "draft",
+          "content": "# Draft\n\nText here.",
+          "format": "markdown",
+          "version": 1
+        },
+        "fallback_markdown": "**Draft note:** Text here."
+      }
+    ]
+  }
+}

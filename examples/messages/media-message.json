@@ -1,0 +1,26 @@
+{
+  "type": "m.ui.message",
+  "content": {
+    "schema": "brian.message",
+    "version": "1.0",
+    "body": [
+      {
+        "type": "markdown",
+        "text": "Here is the image you sent:"
+      },
+      {
+        "type": "image",
+        "url": "mxc://example/media_01HX",
+        "alt": "Uploaded photo",
+        "mime_type": "image/jpeg"
+      },
+      {
+        "type": "audio",
+        "url": "mxc://example/audio_01HX",
+        "mime_type": "audio/mpeg",
+        "duration_ms": 23000,
+        "transcript": "Optional transcript"
+      }
+    ]
+  }
+}

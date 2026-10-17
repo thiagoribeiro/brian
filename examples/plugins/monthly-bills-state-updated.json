@@ -1,0 +1,25 @@
+{
+  "type": "m.plugin.state.updated",
+  "content": {
+    "plugin": "checklist",
+    "instance_id": "monthly_bills_2026_05",
+    "state": {
+      "status": "open",
+      "items": [
+        {
+          "id": "electricity",
+          "label": "Electricity bill",
+          "checked": true,
+          "checked_at": "2026-05-06T14:30:00Z",
+          "checked_by": "user_123"
+        },
+        {
+          "id": "internet",
+          "label": "Internet bill",
+          "checked": false,
+          "due_date": "2026-05-15"
+        }
+      ]
+    }
+  }
+}
